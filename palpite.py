@@ -14,9 +14,15 @@ while True:
     if answer.lower().strip() == "exit":
         print("See u later!")
         break
-    elif value_adjustment == float(answer):
-        print("Congratulations, you won!")
-        break
-    else:
-        print("Nop, try again!")
+
+    try:
+
+        if value_adjustment == float(answer):
+            print("Congratulations, you won!")
+            break
+        else:
+            print("Nop, try again!")
+
+    except ValueError:
+        print("Invalid input!")
 
