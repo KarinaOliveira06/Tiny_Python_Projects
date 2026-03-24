@@ -7,9 +7,16 @@ value_adjustment = round(r, 1)
 for i in range(3):
     print(f"Termo {i+1}: {a1+(i*value_adjustment)}")
 
+
 while True:
-    if value_adjustment == float(input("Find the correct ratio and submit your answer: ")):
-        print("Congratulations, you wrote the correct aswer!")
+    answer = input("Type the correct ratio or 'exit' to quit :" )
+
+    if answer.lower().strip() == "exit":
+        print("See u later!")
+        break
+    elif value_adjustment == float(answer):
+        print("Congratulations, you won!")
         break
     else:
-        print("Nop, try again.")
+        print("Nop, try again!")
+
