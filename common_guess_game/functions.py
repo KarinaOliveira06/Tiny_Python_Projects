@@ -14,7 +14,7 @@ def retry_function():
         print("Something went wrong, please try again.")
 
 def guess_function(guess, sort_number):
-        if guess == sort_number: #If player wins, he earn coins
+        if guess == sort_number:
             print("Player Wins!")
             return True
         elif guess > sort_number:
@@ -24,12 +24,14 @@ def guess_function(guess, sort_number):
 
         
 def gameover_function(coins):
+    """Checks if the player has enough coins to play. Returns Boolean."""
         if coins <= 0:
             print("Game Over, you are broke!")
             return False
         return True
 
 def load_coins ():
+    """Reads the coin balance from database.txt. Returns 100 if file not found."""
     try:
         with open(DB_PATH, "r") as archive:
             return int(archive.read())
@@ -37,6 +39,7 @@ def load_coins ():
          return 100
 
 def save_coins(value):
+    """Writes the current coin balance to the local database.txt file."""
      with open(DB_PATH, "w") as archive:
           archive.write(str(value))
 
