@@ -1,0 +1,7 @@
+word_bank = ["Apple", "Abyss", "Anchor", "Agent", "Agile", "Bakery", "Bandit", "Bubble", "Beacon", "Bright", "Cactus", "Canyon", "Chrome", "Cipher", "Clutch", "Danger", "Denial", "Device", "Dragon", "Drift", "Eagle", "Echo", "Emblem", "Engine", "Entire",
+             "Fabric", "Falcon", "Filter", "Flight", "Fossil", "Galaxy", "Garlic", "Gentle", "Glance", "Guitar", "Hammer", "Hazard", "Herbal", "Hollow", "Hybrid", "Impact", "Infant", "Island", "Ivory", "Jacket", "Jargon", "Jewel", "Jordan", "Jungle", "Junior",
+             "Kettle", "Keyboard", "Kidney", "Kindle", "Knight", "Laptop", "Legacy", "Legend", "Linear", "Liquid", "Magnet", "Manner", "Matrix", "Medium", "Method", "Narrow", "Nature", "Nebula", "Nickel", "Normal", "Object", "Ocean", "Offset", "Online", "Orbit",
+             "Packet", "Palace", "Pencil", "Planet", "Pocket", "Quartz", "Queasy", "Quench", "Quest", "Quiver", "Rabbit", "Radar", "Random", "Relief", "Rhythm", "Safari", "Scheme", "Silver", "Simple", "System", "Target", "Theory", "Ticket", "Travel", "Tunnel",
+             "Unique", "Update", "Urgent", "Useful", "Utmost", "Vacuum", "Valley", "Vector", "Vessel", "Visual", "Walnut", "Weapon", "Weekly", "Window", "Winter", "Xylos", "Xenon", "Xerox", "Xylem", "Xylol", "Yacht", "Yearly", "Yellow", "Yield", "Yogurt", "Zebra", "Zenith", "Zero", "Zodiac", "Zombie"]
+
+letter_bank = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
