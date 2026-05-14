@@ -1,7 +1,11 @@
-def cart():
-    for l in range(1):
-        for c in range(1):
-
-            game_sale.append(game_sale)
-            print(f"{game_sale}")
-            return game_sale
+def print_cart_matrix(shopping_cart):
+    print("\n--- Your Cart Matrix ---")
+    
+    if not shopping_cart:
+        print("[ Empty ]")
+    else:
+        for l in range(len(shopping_cart)):
+            for c in range(1):
+                print(f"[{shopping_cart[l][c]}]")
+                
+    print("------------------------")
