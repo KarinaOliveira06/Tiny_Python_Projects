@@ -10,8 +10,8 @@ def help():
         if instructions in ["register", "regis", "r"]:
             employee = input("type your name: ")
             password = input("type your password: ")
-            with open ("register.txt", "a", encoding = "UTF-8") as arquivo:
-                arquivo.write(f"Name: {employee}" "\n"
+            with open ("register.txt", "a", encoding = "UTF-8") as archive:
+                arquivo.write(f"Name: {employee}," "\n"
                 f"Password: {password}")
                 print(f"Congratulations {employee}! You registered your account, now try log in.")
 

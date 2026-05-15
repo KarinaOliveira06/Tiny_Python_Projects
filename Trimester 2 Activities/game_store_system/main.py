@@ -1,4 +1,5 @@
 from functions import help
+import register
 
 login = input("""
 Welcome to the World Games Store register system!
@@ -16,6 +17,14 @@ while True:
         elif login in ["login", "log", "in", "log in", "l"]:
             name_login = input("Type your name: ")
             password_login = input("Type your password: ")
+            with open("register.txt", "r") as archive:
+                for line in archive:
+                    try:
+                        line = line.strip()
+                        data = line.split(",")
+                        if name_login == data[0] and password_login == data[1]:
+                            print("login Successful!")
+
 
     except ValueError:
         print("Something went wrong, value error.")
