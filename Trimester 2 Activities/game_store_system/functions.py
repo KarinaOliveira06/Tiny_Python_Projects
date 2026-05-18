@@ -6,8 +6,8 @@ def help_function():
     """)
 
     if instructions in ["register", "regis", "r"]:
-        employee = input("type your name: ")
-        password = input("type your password: ")
+        employee = input("type your name: ").lower()
+        password = input("type your password: ").lower()
         with open ("register.txt", "a", encoding = "UTF-8") as archive:
             archive.write(f"{employee},{password}" "\n")
             print(f"Congratulations {employee}! You registered your account, now try log in.")
@@ -31,4 +31,20 @@ def register_function():
 
     with open("products.txt", "a", encoding = "UTF-8") as archive:
         archive.write(f"{p_name},{p_price}" "\n")
-        print("Well done, you've registered {product} for ${p_price}")
+        print(f"Well done, you've registered {p_name} for ${p_price}")
+
+def show_menu():
+    with open ("products.txt", "r", encoding = "UTF-8") as archive:
+
+        for line in archive:
+            line = line.strip()
+            data = line.split(",")
+        
+            if len(data) >= 2:
+                p_name = data[0]
+                p_price = data[1]
+
+                print(f"""
+                Product: {p_name}
+                Price: {p_price}
+                """)

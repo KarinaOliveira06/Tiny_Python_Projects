@@ -1,5 +1,6 @@
 from functions import help_function
 from functions import register_function
+from functions import show_menu
 
 while True:
     login_successful = False
@@ -30,13 +31,20 @@ while True:
 
     if login_successful == True:
         break
-        system_select = input("""=== Game Store System ===
+
+while True:
+        system_select = input("""
+        === Game Store System ===
         
         (1) Register Product
         (2) Products Menu
+        (3) Exit
         
-        """)
+        """).lower()
+
         if  system_select in ["1", "register", "register product", "registerproduct", "regis", "re", "um", "one"]:
             register_function()
-
-
+        elif system_select in ["2", "dois", "two", "product", "products", "menu", "products menu"]:
+            show_menu()
+        elif system_select in ["3", "tres", "three", "exit", "ext", "sair"]:
+            print("")

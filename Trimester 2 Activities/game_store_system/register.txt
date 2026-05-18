@@ -1,2 +1,1 @@
-Name: karina,
-Password: 123
+karina,123
