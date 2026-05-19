@@ -1,2 +1,6 @@
 The Witcher 3,30
 GTA V,50
+Subnautica 2,120
+CS prime,70
+Baldurs Gate,200
+cyberpunk 2077,200
