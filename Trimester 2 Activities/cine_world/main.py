@@ -1,5 +1,6 @@
 from functions import movie_register
 from functions import digital_poster
+cart = []
 
 print("""
 Welcome to the Cine World System!
@@ -20,4 +21,6 @@ if system_select in ["1", "movie", "movie register", "register", "reg", "regigig
     print(f"Congratulations, you've registered {select_movie}!")
 elif system_select in ["2", "digital" "poster", "digital", "poster", "post"]:
     digital_poster()
-elif system_select in ["3", "pos", "pos system", "system", "sys", "ops", "pos sys", "possystem", "posys"]: 
+elif system_select in ["3", "pos", "pos system", "system", "sys", "ops", "pos sys", "possystem", "posys"]:
+    insert_value = input("Hello, type 'ticket' to buy tickets.")
+    pos_system(insert_value) 

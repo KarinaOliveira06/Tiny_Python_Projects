@@ -12,4 +12,4 @@ def digital_poster():
     return_menu = input("Press [ENTER] to return to the menu.")
 
 def pos_system():
-
+    insert_value = input("")
