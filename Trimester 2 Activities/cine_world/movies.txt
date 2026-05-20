@@ -1,1 +1,3 @@
 bee movie,10
+relampago marquinhos,20
+nemo,4
