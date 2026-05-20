@@ -92,7 +92,6 @@ def show_menu(cart):
                     clean_price = item[1].replace("$", "").strip()
                     total_price += float(clean_price)
                 
-                # --- Lógica de Desconto de 3% Acima de 400 ---
                 if total_price > 400.0:
                     discount = total_price * 0.03
                     final_price = total_price - discount
@@ -101,7 +100,6 @@ def show_menu(cart):
                     print(f"Total to pay: ${final_price:.2f}")
                 else:
                     print(f"\nTotal to pay: ${total_price:.2f}")
-                # ----------------------------------------------
 
                 print("===============\n")
                 
