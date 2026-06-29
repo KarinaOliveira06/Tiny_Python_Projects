@@ -1,0 +1,51 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="card">
+    <h2>Detalhes da Conta</h2>
+    <hr style="margin: 10px 0; border: 0; border-top: 1px solid #eee;">
+    <p><strong>Cliente:</strong> {{ conta.cliente.nome }}</p>
+    <p><strong>Número da Conta:</strong> {{ conta.numero_conta }}</p>
+    
+    <div style="background-color: #eff6ff; padding: 15px; border-radius: 5px; margin: 20px 0;">
+        <h3 style="color: #1e3a8a; margin-bottom: 5px;">Saldo Atual:</h3>
+        <h2 style="font-size: 2em; color: #1e40af;">R$ {{ conta.saldo }}</h2>
+    </div>
+
+    <div>
+        <a href="{% url 'depositar' conta.id %}" class="btn btn-success">Fazer Depósito</a>
+        <a href="{% url 'sacar' conta.id %}" class="btn btn-danger">Fazer Saque</a>
+    </div>
+</div>
+
+<div class="card">
+    <h3>Histórico de Movimentações</h3>
+    
+    {% if movimentacoes %}
+    <table>
+        <thead>
+            <tr>
+                <th>Data/Hora</th>
+                <th>Tipo</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for mov in movimentacoes %}
+            <tr>
+                <td>{{ mov.data_hora|date:"d/m/Y H:i" }}</td>
+                <td>
+                    <span class="tipo-{{ mov.tipo }}">
+                        {{ mov.get_tipo_display }}
+                    </span>
+                </td>
+                <td>R$ {{ mov.valor }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p style="margin-top: 15px; color: #6b7280;">Nenhuma movimentação registrada nesta conta ainda.</p>
+    {% endif %}
+</div>
+{% endblock %}

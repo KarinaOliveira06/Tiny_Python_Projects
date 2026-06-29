@@ -1,0 +1,108 @@
+:root {
+    --primary: #2563eb;
+    --success: #16a34a;
+    --danger: #dc2626;
+    --bg: #f3f4f6;
+    --text: #1f2937;
+}
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body { 
+    background-color: var(--bg); 
+    color: var(--text); 
+    padding: 20px; 
+}
+
+.container { 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+header { 
+    text-align: center; 
+    margin-bottom: 30px; 
+    padding: 20px; 
+    background: white; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+h1 { 
+    color: var(--primary); 
+}
+
+.card { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    margin-bottom: 20px; 
+}
+
+.btn { 
+    display: inline-block; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    color: white; 
+    border-radius: 5px; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-right: 10px; 
+}
+
+.btn-primary { background-color: var(--primary); }
+.btn-success { background-color: var(--success); }
+.btn-danger { background-color: var(--danger); }
+.btn-secondary { background-color: #6b7280; }
+.btn:hover { opacity: 0.9; }
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 15px; 
+}
+
+th, td { 
+    padding: 12px; 
+    text-align: left; 
+    border-bottom: 1px solid #e5e7eb; 
+}
+
+th { 
+    background-color: #f9fafb; 
+    font-weight: bold; 
+}
+
+.tipo-D { color: var(--success); font-weight: bold; }
+.tipo-S { color: var(--danger); font-weight: bold; }
+
+.messages { 
+    list-style: none; 
+    margin-bottom: 20px; 
+}
+
+.messages li { 
+    padding: 15px; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    color: white; 
+}
+
+.messages .success { background-color: var(--success); }
+.messages .error { background-color: var(--danger); }
+
+/* Inputs */
+input[type="number"], input[type="text"], input[type="email"] { 
+    width: 100%; 
+    padding: 10px; 
+    margin: 10px 0 20px 0; 
+    border: 1px solid #d1d5db; 
+    border-radius: 5px; 
+}
